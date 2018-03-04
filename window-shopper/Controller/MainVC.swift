@@ -9,10 +9,15 @@
 import UIKit
 
 class MainVC: UIViewController {
-
+    @IBOutlet weak var wageTxt: CurrencyTxtField!
+    @IBOutlet weak var priceTxt: CurrencyTxtField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let calcBtn = UIButton(frame: CGRect(x:0, y: 0, width: view.frame.size.width, height: 60))
+        calcBtn.backgroundColor = UIColor.orange
+        
     }
 
     override func didReceiveMemoryWarning() {
